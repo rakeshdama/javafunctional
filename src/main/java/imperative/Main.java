@@ -34,7 +34,7 @@ public class Main {
                 .filter(person -> Person.Gender.FEMALE.equals(person.gender))
                 .collect(Collectors.toList());
 
-        System.out.println(females2);
+        females2.forEach(System.out::println);
     }
 
     static class Person {
